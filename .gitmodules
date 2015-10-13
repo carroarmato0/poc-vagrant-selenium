@@ -1,0 +1,12 @@
+[submodule "modules/java"]
+	path = modules/java
+	url = https://github.com/puppetlabs/puppetlabs-java.git
+[submodule "modules/stdlib"]
+	path = modules/stdlib
+	url = https://github.com/puppetlabs/puppetlabs-stdlib.git
+[submodule "modules/wget"]
+	path = modules/wget
+	url = https://github.com/maestrodev/puppet-wget.git
+[submodule "modules/selenium"]
+	path = modules/selenium
+	url = git@github.com:carroarmato0/puppet-selenium.git
