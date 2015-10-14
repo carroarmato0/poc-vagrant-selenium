@@ -14,4 +14,4 @@ Puppet POC with Selenium Grid and Node
 
 2) vagrant up;
 
-3) Open your browser and point to http://192.168.33.21:4444/
+3) Open your browser and point to http://192.168.33.21:4444/grid/console
