@@ -1,6 +1,5 @@
 ---
 selenium::manage_logrotate: false
 selenium::version: '2.48.2'
-selenium::node::options: '-Dwebdriver.enable.native.events=1 -role node'
+selenium::node::options: '-Dwebdriver.enable.native.events=1 -role node -browser browserName=firefox,version=38.3.0,maxInstances=5,platform=LINUX'
 selenium::node::hub: 'http://192.168.33.21:4444/grid/register'
-
