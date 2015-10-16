@@ -40,13 +40,14 @@ Type=simple
 PIDFile=/var/run/xvfb.pid
 ExecStart=/usr/bin/Xvfb :0 -ac -screen 0 1024x768x24 +extension GLX +render -noreset
     ',
+    require => Package['xorg-x11-server-Xvfb'],
     notify  => Exec['Reload systemd'],
   }
 
   service { 'xvfb':
     ensure  => running,
     enable  => true,
-    require => File['xvfb.service'],
+    require => [File['xvfb.service'], Exec['Reload systemd']],
   }
 
 }
